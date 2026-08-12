@@ -1,0 +1,349 @@
+{
+  "notes": "【手工 fixture】test2.jpg（500x375）的 VLM 语义快照：取自 openai/gpt-5.6-luna-pro 的一次真实识别，并把洋室②的帖数按图上标注（約5.6畳）改正（模型当时读成了 6.8）。只用来测融合器的语义部分，几何一概不用。",
+  "scale": {
+    "method": "tatami",
+    "drawingWidthMm": 7800
+  },
+  "rooms": [
+    {
+      "id": "r1",
+      "name": "浴室",
+      "floor": "tile",
+      "tatamiCount": null,
+      "polygon": [
+        {
+          "x": 210,
+          "y": 62
+        },
+        {
+          "x": 326,
+          "y": 62
+        },
+        {
+          "x": 326,
+          "y": 190
+        },
+        {
+          "x": 210,
+          "y": 190
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "トイレ",
+      "floor": "tile",
+      "tatamiCount": null,
+      "polygon": [
+        {
+          "x": 210,
+          "y": 190
+        },
+        {
+          "x": 326,
+          "y": 190
+        },
+        {
+          "x": 326,
+          "y": 300
+        },
+        {
+          "x": 210,
+          "y": 300
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "洗面所",
+      "floor": "tile",
+      "tatamiCount": null,
+      "polygon": [
+        {
+          "x": 326,
+          "y": 126
+        },
+        {
+          "x": 426,
+          "y": 126
+        },
+        {
+          "x": 426,
+          "y": 316
+        },
+        {
+          "x": 326,
+          "y": 316
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "name": "ウォークインクローゼット",
+      "floor": "other",
+      "tatamiCount": null,
+      "polygon": [
+        {
+          "x": 388,
+          "y": 62
+        },
+        {
+          "x": 516,
+          "y": 62
+        },
+        {
+          "x": 516,
+          "y": 126
+        },
+        {
+          "x": 388,
+          "y": 126
+        }
+      ]
+    },
+    {
+      "id": "r5",
+      "name": "玄関・廊下",
+      "floor": "tile",
+      "tatamiCount": null,
+      "polygon": [
+        {
+          "x": 210,
+          "y": 300
+        },
+        {
+          "x": 326,
+          "y": 300
+        },
+        {
+          "x": 326,
+          "y": 344
+        },
+        {
+          "x": 426,
+          "y": 344
+        },
+        {
+          "x": 426,
+          "y": 610
+        },
+        {
+          "x": 276,
+          "y": 610
+        },
+        {
+          "x": 276,
+          "y": 344
+        },
+        {
+          "x": 210,
+          "y": 344
+        }
+      ]
+    },
+    {
+      "id": "r6",
+      "name": "洋室②",
+      "floor": "flooring",
+      "tatamiCount": 5.6,
+      "polygon": [
+        {
+          "x": 276,
+          "y": 344
+        },
+        {
+          "x": 426,
+          "y": 344
+        },
+        {
+          "x": 426,
+          "y": 610
+        },
+        {
+          "x": 276,
+          "y": 610
+        }
+      ]
+    },
+    {
+      "id": "r7",
+      "name": "洋室①",
+      "floor": "flooring",
+      "tatamiCount": 7,
+      "polygon": [
+        {
+          "x": 516,
+          "y": 62
+        },
+        {
+          "x": 778,
+          "y": 62
+        },
+        {
+          "x": 778,
+          "y": 290
+        },
+        {
+          "x": 516,
+          "y": 290
+        }
+      ]
+    },
+    {
+      "id": "r8",
+      "name": "LDK",
+      "floor": "flooring",
+      "tatamiCount": 15.5,
+      "polygon": [
+        {
+          "x": 426,
+          "y": 126
+        },
+        {
+          "x": 516,
+          "y": 126
+        },
+        {
+          "x": 516,
+          "y": 290
+        },
+        {
+          "x": 778,
+          "y": 290
+        },
+        {
+          "x": 778,
+          "y": 330
+        },
+        {
+          "x": 714,
+          "y": 430
+        },
+        {
+          "x": 426,
+          "y": 640
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "type": "door",
+      "roomA": "r1",
+      "roomB": "r3",
+      "x": 326,
+      "y": 156
+    },
+    {
+      "type": "door",
+      "roomA": "r2",
+      "roomB": "r3",
+      "x": 326,
+      "y": 246
+    },
+    {
+      "type": "door",
+      "roomA": "r2",
+      "roomB": "r5",
+      "x": 252,
+      "y": 300
+    },
+    {
+      "type": "sliding_door",
+      "roomA": "r4",
+      "roomB": "r7",
+      "x": 516,
+      "y": 96
+    },
+    {
+      "type": "sliding_door",
+      "roomA": "r4",
+      "roomB": "r8",
+      "x": 452,
+      "y": 126
+    },
+    {
+      "type": "sliding_door",
+      "roomA": "r5",
+      "roomB": "r6",
+      "x": 276,
+      "y": 344
+    },
+    {
+      "type": "sliding_door",
+      "roomA": "r6",
+      "roomB": "r8",
+      "x": 426,
+      "y": 432
+    },
+    {
+      "type": "door",
+      "roomA": "r5",
+      "roomB": "outside",
+      "x": 210,
+      "y": 326
+    },
+    {
+      "type": "window",
+      "roomA": "r1",
+      "roomB": "outside",
+      "x": 264,
+      "y": 62
+    },
+    {
+      "type": "window",
+      "roomA": "r7",
+      "roomB": "outside",
+      "x": 650,
+      "y": 62
+    },
+    {
+      "type": "window",
+      "roomA": "r7",
+      "roomB": "outside",
+      "x": 778,
+      "y": 170
+    },
+    {
+      "type": "window",
+      "roomA": "r8",
+      "roomB": "outside",
+      "x": 778,
+      "y": 306
+    },
+    {
+      "type": "window",
+      "roomA": "r6",
+      "roomB": "outside",
+      "x": 350,
+      "y": 610
+    },
+    {
+      "type": "door",
+      "roomA": "r8",
+      "roomB": "outside",
+      "x": 744,
+      "y": 382
+    }
+  ],
+  "columns": [
+    {
+      "x": 394,
+      "y": 322,
+      "w": 70,
+      "h": 74
+    },
+    {
+      "x": 786,
+      "y": 322,
+      "w": 68,
+      "h": 74
+    },
+    {
+      "x": 400,
+      "y": 694,
+      "w": 76,
+      "h": 74
+    }
+  ]
+}

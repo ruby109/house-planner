@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+coverage
+
+# 环境变量（M3 的 ANTHROPIC_API_KEY 等）——只提交 .env.example
+.env
+.env.*
+!.env.example
+
+# AI 识别的测试图与批量对比结果（可能是用户的真实户型图，不要提交）
+testdata/*
+!testdata/README.md
+# 临时试验用的裁图 / 中间产物，同样可能含用户的真实户型图
+scratchpad/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "wsl",
+      "runtimeArgs": ["-e", "bash", "-c", ". ~/.nvm/nvm.sh >/dev/null 2>&1; cd /mnt/d/house-planner && npx vite --host --port 5300"],
+      "port": 5300
+    }
+  ]
+}

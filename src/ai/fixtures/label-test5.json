@@ -1,0 +1,96 @@
+{
+  "notes": "图中可读到：Living Dining Kitchen 约18.4J；Bedroom 约5.7J；Master Bedroom 约7.6J；Bath；Closet 约1.5J；Shoes in Closet 约1.3J；Balcony；Hall；Porch。1、2、4是同一处被厨房/半隔断切开的LDK；7、8是同一间Bedroom的切分区域；3、6是同一间Master Bedroom的切分区域；5、12属于同一处Balcony的切分区域。10按其所在入口区域判为玄関，13为厕所，9为洗面所。",
+  "rooms": [
+    {
+      "index": 1,
+      "name": "LDK",
+      "floor": "flooring",
+      "tatamiCount": 18.4,
+      "sameRoomAs": null
+    },
+    {
+      "index": 2,
+      "name": "LDK",
+      "floor": "flooring",
+      "tatamiCount": 18.4,
+      "sameRoomAs": 1
+    },
+    {
+      "index": 3,
+      "name": "主寝室",
+      "floor": "flooring",
+      "tatamiCount": 7.6,
+      "sameRoomAs": null
+    },
+    {
+      "index": 4,
+      "name": "LDK",
+      "floor": "flooring",
+      "tatamiCount": 18.4,
+      "sameRoomAs": 1
+    },
+    {
+      "index": 5,
+      "name": "バルコニー",
+      "floor": "tile",
+      "tatamiCount": null,
+      "sameRoomAs": null
+    },
+    {
+      "index": 6,
+      "name": "主寝室",
+      "floor": "flooring",
+      "tatamiCount": 7.6,
+      "sameRoomAs": 3
+    },
+    {
+      "index": 7,
+      "name": "洋室",
+      "floor": "flooring",
+      "tatamiCount": 5.7,
+      "sameRoomAs": null
+    },
+    {
+      "index": 8,
+      "name": "洋室",
+      "floor": "flooring",
+      "tatamiCount": 5.7,
+      "sameRoomAs": 7
+    },
+    {
+      "index": 9,
+      "name": "洗面所",
+      "floor": "tile",
+      "tatamiCount": null,
+      "sameRoomAs": null
+    },
+    {
+      "index": 10,
+      "name": "玄関",
+      "floor": "tile",
+      "tatamiCount": null,
+      "sameRoomAs": null
+    },
+    {
+      "index": 11,
+      "name": "ポーチ",
+      "floor": "tile",
+      "tatamiCount": null,
+      "sameRoomAs": null
+    },
+    {
+      "index": 12,
+      "name": "バルコニー",
+      "floor": "tile",
+      "tatamiCount": null,
+      "sameRoomAs": 5
+    },
+    {
+      "index": 13,
+      "name": "トイレ",
+      "floor": "tile",
+      "tatamiCount": null,
+      "sameRoomAs": null
+    }
+  ]
+}

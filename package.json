@@ -1,0 +1,39 @@
+{
+  "name": "house-planner",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "免注册、自动保存、免费导出的纯 2D Web 户型模拟器（日式 910mm 模数）",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "node --env-file-if-exists=.env server/dev.mjs",
+    "dev:api:mock": "node --env-file-if-exists=.env server/dev.mjs --mock",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "cv:debug": "node server/cv-debug.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.116.0",
+    "@techstark/opencv-js": "^5.0.0-release.1",
+    "jpeg-js": "^0.4.4",
+    "konva": "^9.3.16",
+    "nanoid": "^5.0.9",
+    "pngjs": "^7.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-konva": "^18.2.10",
+    "zod": "^3.24.1",
+    "zundo": "^2.3.0",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "notes": "手绘风格的分譲マンション 2LDK 間取り図（示例数据，用于无 API key 时的开发与端到端联调）。左侧上下两间洋室，右侧 L 形 LDK，左下角玄関，中下浴室。图上标注了帖数，故 scale.method 采用 tatami。坐标刻意带 1~5 单位的歪斜、相邻房间共享边也故意不完全对齐，用来检验 solver 的正交化与共边归并。虚线画的梁按要求忽略。",
+  "scale": {
+    "method": "tatami",
+    "drawingWidthMm": 8800
+  },
+  "rooms": [
+    {
+      "id": "r1",
+      "name": "洋室",
+      "floor": "flooring",
+      "tatamiCount": 6,
+      "polygon": [
+        { "x": 62, "y": 74 },
+        { "x": 419, "y": 71 },
+        { "x": 423, "y": 344 },
+        { "x": 58, "y": 349 }
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "洋室",
+      "floor": "flooring",
+      "tatamiCount": 5,
+      "polygon": [
+        { "x": 57, "y": 350 },
+        { "x": 424, "y": 347 },
+        { "x": 421, "y": 573 },
+        { "x": 61, "y": 579 }
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "玄関",
+      "floor": "tile",
+      "tatamiCount": null,
+      "polygon": [
+        { "x": 60, "y": 578 },
+        { "x": 418, "y": 575 },
+        { "x": 422, "y": 688 },
+        { "x": 57, "y": 691 }
+      ]
+    },
+    {
+      "id": "r4",
+      "name": "LDK",
+      "floor": "flooring",
+      "tatamiCount": 16,
+      "polygon": [
+        { "x": 424, "y": 72 },
+        { "x": 938, "y": 68 },
+        { "x": 941, "y": 687 },
+        { "x": 703, "y": 692 },
+        { "x": 698, "y": 497 },
+        { "x": 417, "y": 503 }
+      ]
+    },
+    {
+      "id": "r5",
+      "name": "浴室",
+      "floor": "tile",
+      "tatamiCount": null,
+      "polygon": [
+        { "x": 418, "y": 498 },
+        { "x": 699, "y": 502 },
+        { "x": 702, "y": 691 },
+        { "x": 423, "y": 686 }
+      ]
+    }
+  ],
+  "openings": [
+    { "type": "door", "roomA": "r3", "roomB": "outside", "x": 238, "y": 690 },
+    { "type": "door", "roomA": "r3", "roomB": "r5", "x": 420, "y": 632 },
+    { "type": "sliding_door", "roomA": "r2", "roomB": "r3", "x": 240, "y": 576 },
+    { "type": "sliding_door", "roomA": "r1", "roomB": "r4", "x": 421, "y": 200 },
+    { "type": "sliding_door", "roomA": "r2", "roomB": "r4", "x": 421, "y": 430 },
+    { "type": "window", "roomA": "r1", "roomB": "outside", "x": 60, "y": 210 },
+    { "type": "window", "roomA": "r2", "roomB": "outside", "x": 60, "y": 470 },
+    { "type": "window", "roomA": "r4", "roomB": "outside", "x": 940, "y": 300 },
+    { "type": "window", "roomA": "r4", "roomB": "outside", "x": 820, "y": 690 }
+  ],
+  "columns": [
+    { "x": 421, "y": 500, "w": 14, "h": 14 },
+    { "x": 699, "y": 500, "w": null, "h": null }
+  ]
+}
